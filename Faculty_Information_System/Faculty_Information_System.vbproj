@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{658C85CC-48B1-4227-B56C-80FB19FE9929}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Faculty_Information_System.My.MyApplication</StartupObject>
+    <RootNamespace>Faculty_Information_System</RootNamespace>
+    <AssemblyName>Faculty_Information_System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Faculty_Information_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Faculty_Information_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore.Design, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddProf.Designer.vb">
+      <DependentUpon>AddProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_personal_prof.Designer.vb">
+      <DependentUpon>Add_personal_prof.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add_personal_prof.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_form.Designer.vb">
+      <DependentUpon>Admin_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calender.Designer.vb">
+      <DependentUpon>Calender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelProf.Designer.vb">
+      <DependentUpon>DelProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty_databaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Faculty_databaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Page.Designer.vb">
+      <DependentUpon>Faculty_Page.vb</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Faculty_Page.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="password_reset.Designer.vb">
+      <DependentUpon>password_reset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="password_reset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof_Achievements.Designer.vb">
+      <DependentUpon>Prof_Achievements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prof_Achievements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof_Courses.Designer.vb">
+      <DependentUpon>Prof_Courses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prof_Courses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof_Edu.Designer.vb">
+      <DependentUpon>Prof_Edu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prof_Edu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof_Experience.Designer.vb">
+      <DependentUpon>Prof_Experience.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prof_Experience.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof_News.Designer.vb">
+      <DependentUpon>Prof_News.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prof_News.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof_Planner.Designer.vb">
+      <DependentUpon>Prof_Planner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prof_Planner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof_Publication.Designer.vb">
+      <DependentUpon>Prof_Publication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prof_Publication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Form.Designer.vb">
+      <DependentUpon>Search_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startup.Designer.vb">
+      <DependentUpon>startup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="startup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddProf.resx">
+      <DependentUpon>AddProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_personal_prof.resx">
+      <DependentUpon>Add_personal_prof.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_form.resx">
+      <DependentUpon>Admin_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calender.resx">
+      <DependentUpon>Calender.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelProf.resx">
+      <DependentUpon>DelProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty_Page.resx">
+      <DependentUpon>Faculty_Page.vb</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password_reset.resx">
+      <DependentUpon>password_reset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof_Achievements.resx">
+      <DependentUpon>Prof_Achievements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof_Courses.resx">
+      <DependentUpon>Prof_Courses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof_Edu.resx">
+      <DependentUpon>Prof_Edu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof_Experience.resx">
+      <DependentUpon>Prof_Experience.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof_News.resx">
+      <DependentUpon>Prof_News.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof_Planner.resx">
+      <DependentUpon>Prof_Planner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof_Publication.resx">
+      <DependentUpon>Prof_Publication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Form.resx">
+      <DependentUpon>Search_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="startup.resx">
+      <DependentUpon>startup.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Faculty_databaseDataSet1.xsc">
+      <DependentUpon>Faculty_databaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Faculty_databaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Faculty_databaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Faculty_databaseDataSet1.xss">
+      <DependentUpon>Faculty_databaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IIT_Guwahati_Logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\220px-User_icon_2.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Faculty_database.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
